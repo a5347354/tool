@@ -1,0 +1,2643 @@
+{
+  "id": "zz3tje0eqh0d4w2gxe38z7d2w12hyfy3",
+  "created": 1728963673135,
+  "modified": 1728964997453,
+  "autoIncrementId": 24,
+  "version": "2.1.3",
+  "style": {
+    "theme": {
+      "colorTheme": "default",
+      "structTheme": "mind-straight"
+    },
+    "map": {},
+    "root": {
+      "connect-tapered": false
+    },
+    "floatRoot": {
+      "connect-tapered": false
+    },
+    "main": {},
+    "sub": {},
+    "summary": {}
+  },
+  "root": {
+    "data": {
+      "id": "a9e3cc8d2b",
+      "expanded": true,
+      "text": "旅遊",
+      "html": "<p>旅遊</p>"
+    },
+    "style": {
+      "text-underline": false,
+      "text-line-through": false
+    },
+    "children": [
+      {
+        "data": {
+          "id": "d946d246cd",
+          "expanded": true,
+          "html": "航空",
+          "text": "航空"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "0dcbe6a863",
+              "html": "<p>機票</p>",
+              "expanded": true,
+              "text": "機票"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "201c4b9446",
+                  "html": "哩程",
+                  "text": "哩程",
+                  "expanded": true
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "6b3659094f",
+                      "html": "<p>長榮</p>",
+                      "expanded": true,
+                      "text": "長榮"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "81b006024b",
+                          "html": "<p>累積</p>",
+                          "expanded": true,
+                          "text": "累積"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "5a3b7e8c00",
+                              "html": "<p>紐西蘭航空</p>",
+                              "hyperlink": "https://www.evaair.com/zh-tw/infinity-mileagelands/mileage-award-program/earning-mileage/star-alliance-airline-partners/mileage-table/air-newzealand.html?fbclid=IwZXh0bgNhZW0CMTEAAR3SSNXRfWOhafn-4Tq6j9-_A9gcQCo8wBLsLQLk-1QRLvFqug2VZiadBZk_aem_QVUuFkX7tsQFpeGLqjGxBg",
+                              "hyperlinkTitle": "",
+                              "text": "紐西蘭航空"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "9e741bc9b6",
+                          "html": "<p>酬賓機票加收25US</p>",
+                          "text": "酬賓機票加收25US",
+                          "expanded": true,
+                          "hyperlink": "https://www.evaair.com/zh-tw/infinity-mileagelands/mileage-award-program/mileage-redemption/award-ticket/eva-uni-air/",
+                          "hyperlinkTitle": ""
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "c1753d8b6b",
+                              "html": "<p>2024-07-01</p>",
+                              "text": "2024-07-01"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "6f269434ab",
+                      "html": "<p>ANA哩程</p>",
+                      "expanded": true,
+                      "text": "ANA哩程",
+                      "hyperlink": "",
+                      "hyperlinkTitle": ""
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "29afa28bab",
+                          "html": "<p>台灣-馬爾地夫</p>",
+                          "expanded": true,
+                          "text": "台灣-馬爾地夫"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "4dd0932f8f",
+                              "html": "新航or長榮",
+                              "expanded": true,
+                              "text": "新航or長榮"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "e1d54aa7bf",
+                                  "html": "<p>TPE-SIN-MLE</p><p>MLE-SIN-TPE</p>",
+                                  "expanded": true,
+                                  "text": "TPE-SIN-MLE\nMLE-SIN-TPE",
+                                  "hyperlink": "https://www.facebook.com/share/p/t8nUJx6vv9UbL4Ds/?",
+                                  "hyperlinkTitle": ""
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "6853909cac",
+                                      "html": "<p>56000哩+4484</p>",
+                                      "text": "56000哩+4484"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "be20588976",
+                                      "html": "<p>新加坡中停</p>",
+                                      "text": "新加坡中停"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "b2db63c22c",
+                          "html": "<p>Ref</p>",
+                          "expanded": true,
+                          "text": "Ref"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "4f61aa1a16",
+                              "html": "<p>哩程教學</p>",
+                              "hyperlink": "https://www.facebook.com/share/xAhejHk6P3rwqExZ/?mibextid=WC7FNe",
+                              "hyperlinkTitle": "",
+                              "text": "哩程教學"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "0cd6f0ae51",
+                          "text": "期限",
+                          "html": "<p>期限</p>"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "d63e95bdd3",
+                      "text": "AS哩程",
+                      "html": "<p>AS哩程</p>",
+                      "expanded": true
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "34c7be3ebd",
+                          "text": "哩程回沖",
+                          "html": "<p>哩程回沖</p>",
+                          "hyperlink": "https://www.facebook.com/share/p/8TkhXhQPfA1jicTr/?",
+                          "hyperlinkTitle": "",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "76876fe7a8",
+                              "text": "陳雅琪 飛行完後看你想累積哪一間，把票號輸入後會有小驚喜 但只有10k的票有 不知道是沒改到還是怎樣 總之有點像是現金票",
+                              "html": "<p>陳雅琪 飛行完後看你想累積哪一間，把票號輸入後會有小驚喜 但只有10k的票有 不知道是沒改到還是怎樣 總之有點像是現金票</p>"
+                            },
+                            "style": {
+                              "text-line-through": false,
+                              "text-underline": false
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "5ca04bed57",
+                          "expanded": true,
+                          "text": "換票",
+                          "html": "<p>換票</p>",
+                          "note": ""
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "885f2cb082",
+                              "text": "info",
+                              "html": "<p>info</p>",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "4bf4732e30",
+                                  "text": "用「阿拉斯加alaska哩程」換星宇航空的機票、日航、國泰都行！",
+                                  "html": "<p>用「阿拉斯加alaska哩程」換星宇航空的機票、日航、國泰都行！</p>",
+                                  "image": "https://gitmindhk.aoscdn.com/app%2Fgitmind-com%2Fresources%2Fdocs%2F4it8vzb99iz0%2F1726395967463_qmSTFZZZsyYzG2AzJxWz8OOddGSZik.png?auth_key=1729050229-458146-457321-5568cf2a9a8d2ee326b96e09c88afbdd&Expires=1729050229&x-oss-process=image%2Fresize%2Cw_640",
+                                  "imageTitle": "1726395967463_qmSTFZZZsyYzG2AzJxWz8OOddGSZik.png",
+                                  "imageNaturalSize": {
+                                    "width": 1078,
+                                    "height": 1414
+                                  },
+                                  "imageOthers": {
+                                    "resource_id": "812fddb0-9431-4fab-bf1b-89e821a03e2b",
+                                    "image_original_url": "https://gitmindhk.aoscdn.com/app/gitmind-com/resources/docs/4it8vzb99iz0/1726395967463_qmSTFZZZsyYzG2AzJxWz8OOddGSZik.png?auth_key=1726482368-338370-457557-43c3bcd7ed0e630f208cb8f332a2f040"
+                                  },
+                                  "hyperlink": "https://www.facebook.com/share/p/1AWxUqJJMc/",
+                                  "hyperlinkTitle": ""
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "data": {
+                              "id": "94e1982c8d",
+                              "text": "可換",
+                              "html": "<p>可換</p>",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "dd6f1059f6",
+                                  "text": "日航",
+                                  "html": "<p>日航</p>"
+                                }
+                              },
+                              {
+                                "data": {
+                                  "id": "4179ca9608",
+                                  "text": "國泰",
+                                  "html": "<p>國泰</p>"
+                                }
+                              },
+                              {
+                                "data": {
+                                  "id": "b92d4c67e9",
+                                  "text": "星宇",
+                                  "html": "星宇",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "e08886ca7e",
+                                      "text": "函館HKD",
+                                      "html": "<p>函館HKD</p>",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "b9ebc34b74",
+                                          "text": "沒有比較便宜32K",
+                                          "html": "<p>沒有比較便宜32K</p>",
+                                          "hyperlink": "https://www.facebook.com/share/p/1DEY5HsRZL/?",
+                                          "hyperlinkTitle": ""
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "a2d9161a0c",
+                                      "text": "札榥",
+                                      "html": "<p>札榥</p>",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "3178e5a767",
+                                          "text": "沒有",
+                                          "html": "<p>沒有</p>"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "63b92146da",
+                                      "text": "東京",
+                                      "html": "<p>東京</p>"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "a54c918f1d",
+                                      "text": "大阪",
+                                      "html": "<p>大阪</p>"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "688b37436b",
+                      "text": "VS哩程",
+                      "html": "<p>VS哩程</p>",
+                      "expanded": true
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "20f8101086",
+                          "text": "開票",
+                          "html": "<p>開票</p>",
+                          "hyperlink": "https://www.facebook.com/share/p/8ey4wt4r2kQmMy7B/?",
+                          "hyperlinkTitle": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "3681cfd11a",
+                  "html": "<p>票價</p>",
+                  "text": "票價"
+                }
+              },
+              {
+                "data": {
+                  "id": "6018336ff6",
+                  "html": "<p>現金</p>",
+                  "expanded": true,
+                  "text": "現金"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "ea761f82e2",
+                      "html": "<p>外站票</p>",
+                      "expanded": true,
+                      "text": "外站票"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "07f5197359",
+                          "html": "<p>亞洲</p>",
+                          "text": "亞洲",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "8abec2a05f",
+                              "html": "<p>長榮</p>",
+                              "text": "長榮",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "b842d9febc",
+                                  "expanded": true,
+                                  "html": "2024-2025",
+                                  "text": "2024-2025"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "a07d915500",
+                                      "html": "<p>12/1 OKA-TPE</p><p>12/1 TPE-VIE</p><p>12/9 VIE-TPE</p><p>4/1 TPE-OKA<br>\\$23,373</p>",
+                                      "expanded": true,
+                                      "text": "12/1 OKA-TPE\n12/1 TPE-VIE\n12/9 VIE-TPE\n4/1 TPE-OKA\n\\$23,373"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "4c9d97f6d9",
+                                          "html": "",
+                                          "text": "",
+                                          "image": "https://gitmindhk.aoscdn.com/app%2Fgitmind-com%2Fresources%2Fdocs%2F2pvu9d57ufpk%2F1719715637917_GC5xixdiiy8GELPWoBI8ULcWY4J0t1.png?auth_key=1729050229-785492-691836-a1fff177560b5d9631dbd5b16299b7f4&Expires=1729050229&x-oss-process=image%2Fresize%2Cw_640",
+                                          "imageNaturalSize": {
+                                            "width": 1080,
+                                            "height": 1093
+                                          },
+                                          "imageTitle": "image.png",
+                                          "imageOthers": {
+                                            "resource_id": "a88a0315-ad90-4597-8ae7-06158ab05872",
+                                            "image_original_url": "https://gitmindhk.aoscdn.com/app/gitmind-com/resources/docs/2pvu9d57ufpk/1719715637917_GC5xixdiiy8GELPWoBI8ULcWY4J0t1.png?auth_key=1719802038-550576-929567-de3ec39794e891c995abb8056ab1f934"
+                                          },
+                                          "hyperlink": "https://www.facebook.com/share/p/snjU1AZf4WbDww3q/",
+                                          "hyperlinkTitle": "",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "7515ce07bf",
+                                              "html": "第一二段行李可直掛",
+                                              "text": "第一二段行李可直掛"
+                                            }
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "4a23bb1809",
+                                              "html": "第一二段間隔久一點, 需加6-8千",
+                                              "text": "第一二段間隔久一點, 需加6-8千"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "888535a7c8",
+                                      "html": "<p>12/1 OKA-TPE</p><p>12/1 TPE-VIE</p><p>12/9 VIE-TPE</p><p>4/1 TPE-OKA</p><p>\\$23,373</p>",
+                                      "text": "12/1 OKA-TPE\n12/1 TPE-VIE\n12/9 VIE-TPE\n4/1 TPE-OKA\n\\$23,373"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "e7795a8ae3",
+                          "html": "<p>歐洲</p>",
+                          "text": "歐洲"
+                        }
+                      },
+                      {
+                        "data": {
+                          "id": "000af31475",
+                          "html": "<p>範例</p>",
+                          "text": "範例"
+                        }
+                      },
+                      {
+                        "data": {
+                          "id": "4aae97f374",
+                          "html": "<p>規則</p>",
+                          "text": "規則",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "09f317d1bb",
+                              "html": "<p>星宇</p>",
+                              "text": "星宇",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "9b2a06f6e6",
+                                  "html": "<p>東南亞-台北-東北亞-台北-東南亞</p>",
+                                  "text": "東南亞-台北-東北亞-台北-東南亞",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "51334d5efc",
+                                      "html": "<p>稅金便宜</p>",
+                                      "text": "稅金便宜"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "4c94853201",
+                                      "html": "<p>範例</p>",
+                                      "expanded": true,
+                                      "text": "範例"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "3c73f06d5a",
+                                          "html": "<p>混艙</p>",
+                                          "text": "混艙",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "4d73dee5a0",
+                                              "html": "2024-01-19",
+                                              "text": "2024-01-19",
+                                              "expanded": true
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "c2cddf4805",
+                                                  "html": "<p>SIN-TPE 經濟<br></p><p>TPE-NRT 經濟</p><p>NRT-TPE 商務</p><p>TPE- SIN 商務</p>",
+                                                  "text": "SIN-TPE 經濟TPE-NRT 經濟\nNRT-TPE 商務\nTPE- SIN 商務",
+                                                  "expanded": true
+                                                },
+                                                "children": [
+                                                  {
+                                                    "data": {
+                                                      "id": "91cc2c5206",
+                                                      "html": "<p>42500哩</p>",
+                                                      "text": "42500哩",
+                                                      "hyperlink": "https://www.facebook.com/groups/agamilestravel/permalink/1485440498848679/?mibextid=W9rl1R",
+                                                      "hyperlinkTitle": ""
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "e8316183aa",
+                                  "html": "<p>東北亞-台北-東南亞-台北-東北亞</p>",
+                                  "text": "東北亞-台北-東南亞-台北-東北亞",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "06fca474d8",
+                                      "html": "<p>商務艙</p>",
+                                      "text": "商務艙",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "20f08b7741",
+                                          "html": "<p>福岡-台北</p><p>台北-清邁</p><p>清邁-台北</p><p>台北-札幌</p>",
+                                          "text": "福岡-台北\n台北-清邁\n清邁-台北\n台北-札幌",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "eeb0bcf50e",
+                                              "html": "稅金",
+                                              "text": "稅金",
+                                              "expanded": true
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "c9bf6ccebf",
+                                                  "html": "<p>9336</p>",
+                                                  "text": "9336",
+                                                  "hyperlink": "https://www.facebook.com/groups/agamilestravel/permalink/1485440498848679/?mibextid=W9rl1R",
+                                                  "hyperlinkTitle": ""
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "f306b6b8d8",
+                                  "html": "<p>可更改航點</p>",
+                                  "expanded": true,
+                                  "text": "可更改航點"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "b746685eb8",
+                                      "html": "不用手續費",
+                                      "text": "不用手續費"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "91e1d34d4f",
+                                      "html": "<p>稅金多退少補</p>",
+                                      "text": "稅金多退少補"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "10a4ea45bd",
+                  "html": "<p>術語</p>",
+                  "expanded": true,
+                  "text": "術語"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "fcab42b14d",
+                      "html": "<p>中停 Stopover</p>",
+                      "expanded": true,
+                      "text": "中停 Stopover"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "3f744be017",
+                          "html": "<p>允許在轉機城市，停留超過24小時</p>",
+                          "text": "允許在轉機城市，停留超過24小時"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "baf5fe475e",
+                      "html": "<p>轉機 Transfer</p>",
+                      "expanded": true,
+                      "text": "轉機 Transfer"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "550b8c7ca8",
+                          "html": "<p>旅行途中在另一個地方停留，但不超過24小時</p>",
+                          "expanded": true,
+                          "text": "旅行途中在另一個地方停留，但不超過24小時"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "3c7f310ef8",
+                              "html": "<p>轉機城市過夜，但前後不超過24小時，還是只算轉機喔</p>",
+                              "text": "轉機城市過夜，但前後不超過24小時，還是只算轉機喔"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "a80e4d1747",
+                      "html": "<p>開口 Open-Jaw</p>",
+                      "expanded": true,
+                      "text": "開口 Open-Jaw"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "efb4f5f0d5",
+                          "html": "<p>去程和回程在不同的城市之間，而中間沒有飛行連接</p>",
+                          "text": "去程和回程在不同的城市之間，而中間沒有飛行連接",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "2c29ca89f9",
+                              "html": "<p>去程和回程的城市不同</p>",
+                              "expanded": true,
+                              "text": "去程和回程的城市不同"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "f0c6f485d3",
+                                  "html": "<p>紐約飛東京，從大阪飛回</p>",
+                                  "text": "紐約飛東京，從大阪飛回"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "data": {
+                              "id": "66443d97ac",
+                              "html": "<p>去程出發和回程到達的城市不同</p>",
+                              "text": "去程出發和回程到達的城市不同",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "18d5c7b614",
+                                  "html": "<p>紐約飛AAA，從BBB飛回洛杉磯(開口)</p>",
+                                  "text": "紐約飛AAA，從BBB飛回洛杉磯(開口)"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "data": {
+                              "id": "64cc6a63fe",
+                              "html": "<p>組合：去程和回程都有不同的出發和到達城市</p>",
+                              "expanded": true,
+                              "text": "組合：去程和回程都有不同的出發和到達城市"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "3e02ac961f",
+                                  "html": "<p>紐約～首爾～東京（開口），大阪～洛杉磯（開口）</p>",
+                                  "text": "紐約～首爾～東京（開口），大阪～洛杉磯（開口）"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "4599fc7b6a",
+                          "expanded": true,
+                          "html": "<p>注意</p>",
+                          "text": "注意"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "debf6c1f66",
+                              "html": "<p>開口城市是否必須在同一個國家或區域的限制</p>",
+                              "text": "開口城市是否必須在同一個國家或區域的限制"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "ea838a2c94",
+                      "html": "<p>離境稅Air Passenger Duty</p>",
+                      "expanded": true,
+                      "text": "離境稅Air Passenger Duty"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "2f05f9e37d",
+                          "html": "<p>高額</p>",
+                          "text": "高額",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "6111662053",
+                              "html": "<p>英國</p>",
+                              "text": "英國",
+                              "expanded": true,
+                              "hyperlink": "https://www.gov.uk/guidance/rates-and-allowances-for-air-passenger-duty",
+                              "hyperlinkTitle": ""
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "f202686a87",
+                                  "html": "倫敦到香港",
+                                  "text": "倫敦到香港",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "06bf4359fa",
+                                      "html": "78英鎊(3540台幣)",
+                                      "text": "78英鎊(3540台幣)",
+                                      "hyperlink": "https://barryctraveling.blogspot.com/2018/04/FlightTaxAvoidance.html",
+                                      "hyperlinkTitle": ""
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "7d98f294e3",
+                                  "html": "<p>避開</p>",
+                                  "text": "避開",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "ccc750b551",
+                                      "html": "<p>EuroStar</p>",
+                                      "expanded": true,
+                                      "text": "EuroStar"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "4c684abe72",
+                                          "html": "<p>法國巴黎</p>",
+                                          "text": "法國巴黎"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "65b0cae160",
+                  "html": "<p>航空公司規定</p>",
+                  "expanded": true,
+                  "text": "航空公司規定"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "b373c72aa8",
+                      "html": "<p>外站票</p>",
+                      "expanded": true,
+                      "text": "外站票"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "c3e1971bf2",
+                          "html": "<p>長榮</p>",
+                          "expanded": true,
+                          "text": "長榮"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "cd6b835d97",
+                              "html": "未規定頭尾只能轉機",
+                              "hyperlink": "https://www.instagram.com/p/C7wQ7zhhm-i/?igsh=dHVwNHhrZDloNTVo",
+                              "hyperlinkTitle": "",
+                              "text": "未規定頭尾只能轉機"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "345d831a63",
+                          "html": "<p>亞萬</p>",
+                          "expanded": true,
+                          "text": "亞萬"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "c7e4f4ec16",
+                              "html": "<p>無外站</p>",
+                              "text": "無外站"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "33e1ed72da",
+                  "html": "<p>工具</p>",
+                  "expanded": true,
+                  "text": "工具"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "2b492b45b2",
+                      "html": "Google ITA",
+                      "expanded": true,
+                      "text": "Google ITA"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "3c6823fc94",
+                          "html": "<p>查機票神器</p>",
+                          "text": "查機票神器"
+                        }
+                      },
+                      {
+                        "data": {
+                          "id": "8c7335962b",
+                          "html": "<p>教學</p>",
+                          "expanded": true,
+                          "text": "教學"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "8bd6f3ff0a",
+                              "hyperlink": "https://www.flyasia.co/2022/11/22/google-ita/amp/",
+                              "hyperlinkTitle": "",
+                              "html": "<p>專業地買機票！Google ITA 使用教學</p>",
+                              "text": "專業地買機票！Google ITA 使用教學"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "3c6b57f6c9",
+                      "html": "<p>Awardplus</p>",
+                      "text": "Awardplus"
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "57fb68d68d",
+                      "html": "<p>GCMap</p>",
+                      "text": "GCMap"
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "caf43b12cc",
+                      "html": "<p>Flightsform</p>",
+                      "text": "Flightsform"
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "3b65882149",
+                      "html": "<p>SeatGuru</p>",
+                      "expanded": true,
+                      "text": "SeatGuru"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "ee725be6e3",
+                          "html": "<p>查飛機座位配置圖，提供選位參考</p>",
+                          "text": "查飛機座位配置圖，提供選位參考"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "21ca581c33",
+                      "html": "<p>WhereToCredit</p>",
+                      "expanded": true,
+                      "text": "WhereToCredit"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "38d44e147f"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "da22c97b8d",
+              "html": "<p>各航空</p>",
+              "expanded": true,
+              "text": "各航空"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "f42d8ad1a4",
+                  "html": "<p>印度航空</p>",
+                  "expanded": true,
+                  "text": "印度航空"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "19feecdd71",
+                      "html": "<p>評價</p>",
+                      "expanded": true,
+                      "text": "評價"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "08b4eacc04",
+                          "html": "<p>缺</p>",
+                          "text": "缺",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "8a9f388a7c",
+                              "html": "<p>螢幕IFE80%壞的</p>",
+                              "text": "螢幕IFE80%壞的",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "432db3b594",
+                                  "html": "",
+                                  "text": "",
+                                  "image": "https://gitmindhk.aoscdn.com/app%2Fgitmind-com%2Fresources%2Fdocs%2F4oqmb0e1h04f%2F1718507936622_nkBBmelhY83gfltVT8B1Bnl48Lskgl.png?auth_key=1729050229-988668-598457-1705f5acdd8e8537f027e9cb4ab66e62&Expires=1729050229&x-oss-process=image%2Fresize%2Cw_640",
+                                  "imageNaturalSize": {
+                                    "width": 720,
+                                    "height": 1280
+                                  },
+                                  "imageTitle": "image.png",
+                                  "imageOthers": {
+                                    "resource_id": "106bc29b-2b74-415d-b7c2-e0ed87935c48",
+                                    "image_original_url": "https://gitmindhk.aoscdn.com/app/gitmind-com/resources/docs/4oqmb0e1h04f/1718507936622_nkBBmelhY83gfltVT8B1Bnl48Lskgl.png?auth_key=1718594337-872936-396847-48308156a3a80bcd191ec6301fd60f24"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "data": {
+                              "id": "6621f14a9f",
+                              "html": "<p>食物難吃</p>",
+                              "text": "食物難吃"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "67be950931",
+                          "html": "<p>優</p>",
+                          "expanded": true,
+                          "text": "優"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "110ea03a12",
+                              "html": "印度人無體位",
+                              "text": "印度人無體位"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "54a2594b92",
+                  "html": "<p>星空聯盟</p>",
+                  "expanded": true,
+                  "text": "星空聯盟"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "a01f640abb",
+                      "html": "<p>亞洲</p>",
+                      "expanded": true,
+                      "text": "亞洲"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "7cb6731807",
+                          "html": "<p>中國航空</p>",
+                          "text": "中國航空",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "90d4b377c6",
+                              "html": "<p>機隊</p>",
+                              "expanded": true,
+                              "text": "機隊"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "bdbe30d15e",
+                                  "html": "<p>A350-900 2018</p>",
+                                  "text": "A350-900 2018",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "90c84d9460",
+                                      "html": "地點",
+                                      "expanded": true,
+                                      "text": "地點"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "bda62ee3b3",
+                                          "html": "<p>澳洲、北美、歐洲、少部分亞洲</p>",
+                                          "text": "澳洲、北美、歐洲、少部分亞洲"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "61b8a2867d",
+                                  "html": "<p>A321neo 2022</p>",
+                                  "expanded": true,
+                                  "text": "A321neo 2022"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "2138d36b2e",
+                                      "html": "窄體",
+                                      "text": "窄體"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "150617dc69",
+                                      "html": "<p>商務艙</p>",
+                                      "expanded": true,
+                                      "text": "商務艙"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "8335b2b5a5",
+                                          "html": "<p>可全躺</p>",
+                                          "text": "可全躺"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "8ae7506bae",
+                                      "html": "其他",
+                                      "expanded": true,
+                                      "text": "其他"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "95e170c534",
+                                          "html": "<p>寶可夢彩繪機</p>",
+                                          "text": "寶可夢彩繪機"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "e83ec19ddf",
+                                      "expanded": true,
+                                      "html": "<p>地點</p>",
+                                      "text": "地點"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "138ffa4873",
+                                          "html": "<p>亞洲</p>",
+                                          "text": "亞洲"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "d3aea74fa0",
+                          "html": "<p>全日空航空ANA</p>",
+                          "text": "全日空航空ANA",
+                          "expanded": true
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "3a581a7351",
+                              "html": "機隊",
+                              "expanded": true,
+                              "text": "機隊"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "41884de65a",
+                                  "expanded": true,
+                                  "html": "<p>787</p>",
+                                  "text": "787"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "58caf7e9c0",
+                                      "html": "<p>787-8</p>",
+                                      "expanded": true,
+                                      "text": "787-8"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "49dd479aad",
+                                          "expanded": true,
+                                          "html": "經濟艙",
+                                          "text": "經濟艙"
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "551970daed",
+                                              "expanded": true,
+                                              "html": "<p>座位</p>",
+                                              "text": "座位"
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "38dc2a82d4",
+                                                  "html": "<p>3-3-3</p>",
+                                                  "text": "3-3-3"
+                                                }
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "317cc7f076",
+                                                  "expanded": true,
+                                                  "html": "<p>膝蓋</p>",
+                                                  "text": "膝蓋"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "data": {
+                                                      "id": "8806595ad2",
+                                                      "html": "<p>一個半拳頭</p>",
+                                                      "text": "一個半拳頭"
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "c3746b610b",
+                                                  "expanded": true,
+                                                  "html": "<p>娛樂設備</p>",
+                                                  "text": "娛樂設備"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "data": {
+                                                      "id": "315319be3c",
+                                                      "html": "<p>控制器</p>",
+                                                      "text": "控制器",
+                                                      "hyperlink": "https://youtu.be/N0JXQg879yA?si=Jof97opjMuKnj6xk&t=237",
+                                                      "hyperlinkTitle": ""
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "b9a5cf0830",
+                                                  "expanded": true,
+                                                  "html": "<p>桌子</p>",
+                                                  "text": "桌子"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "data": {
+                                                      "id": "8aa52ab7d5",
+                                                      "html": "<p>高度偏低</p>",
+                                                      "text": "高度偏低"
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "b29d24e100",
+                                                  "expanded": true,
+                                                  "html": "<p>窗戶</p>",
+                                                  "text": "窗戶"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "data": {
+                                                      "id": "6f2b595f43",
+                                                      "html": "<p>自動變色</p>",
+                                                      "text": "自動變色"
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "c84f4488de",
+                                              "expanded": true,
+                                              "html": "<p>硬體</p>",
+                                              "text": "硬體"
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "f34c345857",
+                                                  "html": "<p>起降聲音大</p>",
+                                                  "text": "起降聲音大"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "1f6f275b3e",
+                                              "html": "廁所",
+                                              "expanded": true,
+                                              "text": "廁所"
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "f7ee065842",
+                                                  "html": "<p>免治</p>",
+                                                  "expanded": true,
+                                                  "text": "免治",
+                                                  "hyperlink": "https://youtu.be/N0JXQg879yA?si=Db3yo5reh6xk7uLo&t=556",
+                                                  "hyperlinkTitle": ""
+                                                },
+                                                "children": []
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "569de52a6d",
+                                                  "html": "<p>很大</p>",
+                                                  "text": "很大"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "data": {
+                              "id": "544987a263",
+                              "expanded": true,
+                              "html": "<p>機組設計</p>",
+                              "text": "機組設計"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "6eb8178a36",
+                                  "expanded": true,
+                                  "html": "<p>服裝</p>",
+                                  "text": "服裝"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "058399388f",
+                                      "html": "<p>和服</p>",
+                                      "text": "和服",
+                                      "hyperlink": "https://youtu.be/N0JXQg879yA?si=G0Hzgta6jgpqvqI8&t=340",
+                                      "hyperlinkTitle": ""
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "7c12f20258",
+                                  "html": "<p>餐點</p>",
+                                  "expanded": true,
+                                  "text": "餐點"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "42a06f8490",
+                                      "html": "推",
+                                      "expanded": true,
+                                      "text": "推"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "4a766bed00",
+                                          "html": "<p>海鮮</p>",
+                                          "text": "海鮮"
+                                        }
+                                      },
+                                      {
+                                        "data": {
+                                          "id": "76fcab5096",
+                                          "html": "<p>水果</p>",
+                                          "text": "水果"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "id": "8b51e0e460",
+                          "html": "<p>韓亞航空Asiana&nbsp;</p>",
+                          "text": "韓亞航空Asiana "
+                        }
+                      },
+                      {
+                        "data": {
+                          "id": "f2bf3c0a38",
+                          "expanded": true,
+                          "html": "<p>長榮</p>",
+                          "text": "長榮"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "e3a0954286",
+                              "expanded": true,
+                              "html": "<p>機隊</p>",
+                              "text": "機隊"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "87979b9d0d",
+                                  "html": "<p>波音787</p>",
+                                  "text": "波音787",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "0a08699230",
+                                      "html": "<p>歐美長線, 少部分亞洲</p>",
+                                      "text": "歐美長線, 少部分亞洲"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "0e899c9f26",
+                      "html": "<p>澳洲</p>",
+                      "expanded": true,
+                      "text": "澳洲"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "e327b983a0",
+                          "html": "<p>紐西蘭航空</p>",
+                          "text": "紐西蘭航空"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "cc7f319dbb",
+                      "html": "<p>歐洲</p>",
+                      "expanded": true,
+                      "text": "歐洲"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "73ebc28bd0",
+                          "html": "<p>漢莎航空Lufthansa</p>",
+                          "text": "漢莎航空Lufthansa"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "6ad4693ccf",
+                  "html": "<p>寰宇一家</p>",
+                  "expanded": true,
+                  "text": "寰宇一家"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "55a1108034",
+                      "html": "<p>亞洲</p>",
+                      "expanded": true,
+                      "text": "亞洲"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "846818b5fd",
+                          "html": "<p>星宇</p>",
+                          "expanded": true,
+                          "text": "星宇"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "abacdb3f22",
+                              "html": "<p>機隊</p>",
+                              "expanded": true,
+                              "text": "機隊"
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "dc25e18b5b",
+                                  "html": "<p>A330neo 2022</p>",
+                                  "expanded": true,
+                                  "note": "✈星宇航空A330neo經濟艙｜跟A350經濟艙差在哪?\nhttps://www.youtube.com/watch?v=5qNMpUVJQp0",
+                                  "text": "A330neo 2022"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "16f6dee796",
+                                      "html": "<p>wide body</p>",
+                                      "text": "wide body"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "50f2581351",
+                                      "html": "<p>經濟艙</p>",
+                                      "expanded": true,
+                                      "text": "經濟艙"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "1670e20424",
+                                          "html": "<p>座位</p>",
+                                          "expanded": true,
+                                          "text": "座位"
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "261f2c8854",
+                                              "html": "<p>2-4-2</p>",
+                                              "text": "2-4-2",
+                                              "expanded": true
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "63d3516575",
+                                                  "html": "坐靠窗好去上廁所",
+                                                  "text": "坐靠窗好去上廁所"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "989ce2cff2",
+                                              "html": "<p>膝蓋</p>",
+                                              "expanded": true,
+                                              "text": "膝蓋"
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "65b33d3508",
+                                                  "html": "<p>前方有兩個拳頭</p>",
+                                                  "text": "前方有兩個拳頭",
+                                                  "hyperlink": "https://youtu.be/5qNMpUVJQp0?si=mGmSHclMhLUSmbNu&t=122",
+                                                  "hyperlinkTitle": ""
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "dab2b62f29",
+                                              "html": "<p>頭靠枕</p>",
+                                              "text": "頭靠枕",
+                                              "expanded": true,
+                                              "hyperlink": "https://youtu.be/5qNMpUVJQp0?si=ZHkM4II5UjGoo_PW&t=128",
+                                              "hyperlinkTitle": ""
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "70b726000d",
+                                                  "html": "<p>皮革材質</p>",
+                                                  "text": "皮革材質"
+                                                }
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "487b38475e",
+                                                  "html": "可以內凹",
+                                                  "text": "可以內凹"
+                                                }
+                                              },
+                                              {
+                                                "data": {
+                                                  "id": "bd0420769a",
+                                                  "html": "<p>高度可以調整</p>",
+                                                  "text": "高度可以調整"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "a970e3937a",
+                                              "html": "<p>最後一排</p>",
+                                              "expanded": true,
+                                              "text": "最後一排"
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "7495079e07",
+                                                  "html": "<p>椅背可以往後傾斜</p>",
+                                                  "text": "椅背可以往後傾斜"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "f9339564ea",
+                                              "html": "<p>大地色系</p>",
+                                              "text": "大地色系"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "data": {
+                                          "id": "c5c1e31f8d",
+                                          "expanded": true,
+                                          "html": "<p>窗戶</p>",
+                                          "text": "窗戶"
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "ed27ed46f2",
+                                              "html": "<p>手動拉板</p>",
+                                              "text": "手動拉板"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "4dc735dfb9",
+                                  "html": "<p>A350-900 2022</p>",
+                                  "expanded": true,
+                                  "text": "A350-900 2022"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "d89b26d7cb",
+                                      "html": "<p>wide body</p>",
+                                      "text": "wide body"
+                                    }
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "502ba9d2a9",
+                                      "html": "<p>經濟艙</p>",
+                                      "expanded": true,
+                                      "text": "經濟艙"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "d96ef704b1",
+                                          "html": "<p>座位</p>",
+                                          "text": "座位",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "03d6636694",
+                                              "html": "<p>3-3-3</p>",
+                                              "text": "3-3-3"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "data": {
+                                          "id": "a2c8b07bab",
+                                          "html": "<p>窗戶</p>",
+                                          "text": "窗戶",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "c78013c6f3",
+                                              "html": "<p>電子調光窗</p>",
+                                              "text": "電子調光窗"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "0bdfd9bbaa",
+                                      "expanded": true,
+                                      "html": "<p>商務艙</p>",
+                                      "text": "商務艙"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "994c905c68",
+                                          "expanded": true,
+                                          "html": "<p>座位</p>",
+                                          "text": "座位"
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "7dea42f867",
+                                              "html": "<p>拉門隔板</p>",
+                                              "text": "拉門隔板"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "data": {
+                                          "id": "3a2ec3c748",
+                                          "html": "<p>窗戶</p>",
+                                          "text": "窗戶",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "43fa3473b8",
+                                              "html": "<p>電子調光窗</p>",
+                                              "text": "電子調光窗"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "e04b11401e",
+                                  "html": "<p>A321neo 2022</p>",
+                                  "text": "A321neo 2022"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "5c4dcd1ed8",
+              "html": "<p>貴賓室</p>",
+              "expanded": true,
+              "text": "貴賓室"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "91e007158d",
+                  "html": "<p>信用卡</p>",
+                  "expanded": true,
+                  "text": "信用卡"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "843e4d60a7",
+                      "html": "<p>匯豐</p>",
+                      "expanded": true,
+                      "text": "匯豐",
+                      "hyperlink": ""
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "d88915a65e",
+                          "html": "<p>旅人卡</p>",
+                          "expanded": true,
+                          "hyperlink": "https://www.hsbc.com.tw/credit-cards/products/travel/",
+                          "hyperlinkTitle": "",
+                          "text": "旅人卡"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "65443bfb05",
+                              "html": "<p>御璽卡</p>",
+                              "image": "https://gitmindhk.aoscdn.com/app%2Fgitmind-com%2Fresources%2Fdocs%2Fzylw32gcf3e4%2F1722745204261_aZllDPXJxhXfMPkqEu4f5VgzkfuWab.png?auth_key=1729050229-537249-710183-c84f80c9a87a3c9c7e89ae15978b3545&Expires=1729050229&x-oss-process=image%2Fresize%2Cw_640",
+                              "imageNaturalSize": {
+                                "width": 300,
+                                "height": 190
+                              },
+                              "imageTitle": "image.png",
+                              "imageOthers": {
+                                "resource_id": "287d619a-e678-4553-85c2-208ef02704d2",
+                                "image_original_url": "https://gitmindhk.aoscdn.com/app/gitmind-com/resources/docs/zylw32gcf3e4/1722745204261_aZllDPXJxhXfMPkqEu4f5VgzkfuWab.png?auth_key=1722831604-782359-148523-9607c81a8ecef403029bc3b336b10460"
+                              },
+                              "text": "御璽卡",
+                              "expanded": true
+                            },
+                            "children": [
+                              {
+                                "data": {
+                                  "id": "e01631c938",
+                                  "html": "<p>2024</p>",
+                                  "expanded": true,
+                                  "text": "2024"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "30749d1edd",
+                                      "html": "<p>環亞機場貴賓室</p>",
+                                      "text": "環亞機場貴賓室",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "d1a7e8b6d4",
+                                          "html": "<p>20240701-20250630</p>",
+                                          "text": "20240701-20250630",
+                                          "expanded": true
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "0a366bdbec",
+                                              "html": "<p>權益</p>",
+                                              "text": "權益",
+                                              "hyperlink": "https://www.hsbc.com.tw/credit-cards/benefits/lounge-services/#-1002571736__panel0",
+                                              "hyperlinkTitle": ""
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "data": {
+                                          "id": "21d07b2277",
+                                          "html": "<p>預約</p>",
+                                          "expanded": true,
+                                          "text": "預約"
+                                        },
+                                        "children": [
+                                          {
+                                            "data": {
+                                              "id": "e236e65a85",
+                                              "html": "<p>金鋒</p>",
+                                              "text": "金鋒",
+                                              "hyperlink": "https://24tms.vlimo.com.tw/HSBC/HSBC.aspx?ID=2",
+                                              "hyperlinkTitle": ""
+                                            }
+                                          },
+                                          {
+                                            "data": {
+                                              "id": "a99f079b80",
+                                              "text": "預約教學",
+                                              "html": "<p>預約教學</p>",
+                                              "expanded": true
+                                            },
+                                            "children": [
+                                              {
+                                                "data": {
+                                                  "id": "bf954f5b12",
+                                                  "text": "護照要簽誰的名字",
+                                                  "html": "護照要簽誰的名字",
+                                                  "hyperlink": "https://www.facebook.com/share/p/1F2CyWZNth/",
+                                                  "hyperlinkTitle": ""
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "03df3f7b1c",
+                                      "html": "<p>龍騰貴賓室</p>",
+                                      "text": "龍騰貴賓室",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "51fd082d99",
+                                          "text": "已取消",
+                                          "html": "<p>已取消</p>"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "d8e1c78238",
+                                  "html": "<p>Tips</p>",
+                                  "expanded": true,
+                                  "text": "Tips"
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "d2cad6341a",
+                                      "html": "<p>申請時，同一卡號分別申請兩個登機證的名字，可以一次進去兩人</p>",
+                                      "hyperlink": "https://www.facebook.com/groups/agamilestravel/posts/1508236926569036/?comment_id=1508244443234951&amp;__cft__[0]=AZUfEDxTx9wbKy_Y5oYFOENKgmIRPHuTJn5KfC7CvTBMz85E3V2WdbviYNns5x2suXXGoexUwbNwNCDGImJqlDMjqYojCoHzII0z90OeRVzYRV2mP2kgUOkA6NIFmdEkMi0nmbaSfVb3paI7Sn_cCLLmHfRie1ML-oYQOYOEq56X9w&amp;__tn__=R]-R",
+                                      "text": "申請時，同一卡號分別申請兩個登機證的名字，可以一次進去兩人",
+                                      "hyperlinkTitle": "",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "18be7a7b61",
+                                          "text": "Royal Dang 填附卡沒用、我試過、ㄧ開始預約填正卡人資料、然後會顯示可使用剩餘次數、再來會請你填英文名字、就填要進貴賓室的親友的登機證英文名字、二個人就申請二次、收到申請後、過幾天就會email 二個不同的QR code 給你",
+                                          "html": "<p>Royal Dang 填附卡沒用、我試過、ㄧ開始預約填正卡人資料、然後會顯示可使用剩餘次數、再來會請你填英文名字、就填要進貴賓室的親友的登機證英文名字、二個人就申請二次、收到申請後、過幾天就會email 二個不同的QR code 給你</p>"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "2fd514cc9b",
+                                      "html": "<p>八成團費，可用kkday 或旅行社過水</p>",
+                                      "expanded": true,
+                                      "text": "八成團費，可用kkday 或旅行社過水"
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "5bd747d54b",
+                                          "html": "<p>PeiYu Lai 銀行怎麼會知道你的八成是多少錢呢？不過我通常都是刷個幾千塊、不要太難看就好、然後有些事情就知道就好、不用特地問客服、客服的回答都是制式的。</p>",
+                                          "text": "PeiYu Lai 銀行怎麼會知道你的八成是多少錢呢？不過我通常都是刷個幾千塊、不要太難看就好、然後有些事情就知道就好、不用特地問客服、客服的回答都是制式的。"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "data": {
+                                  "id": "1955e9dcf2",
+                                  "text": "換",
+                                  "html": "<p>換</p>",
+                                  "expanded": true
+                                },
+                                "children": [
+                                  {
+                                    "data": {
+                                      "id": "8e05ae4e5d",
+                                      "text": "法航",
+                                      "html": "<p>法航</p>",
+                                      "expanded": true
+                                    },
+                                    "children": [
+                                      {
+                                        "data": {
+                                          "id": "72fbecaf76",
+                                          "text": "再換華航、長榮",
+                                          "html": "<p>再換華航、長榮</p>"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "data": {
+                                      "id": "ea6b45158c",
+                                      "text": "Life miles",
+                                      "html": "<p>Life miles</p>"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "data": {
+                      "id": "4576f7a79a",
+                      "text": "中信",
+                      "html": "<p>中信</p>",
+                      "expanded": true
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "2781558969",
+                          "text": "ANA",
+                          "html": "<p>ANA</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "33be174413",
+                  "html": "<p>環亞貴賓室</p>",
+                  "expanded": true,
+                  "text": "環亞貴賓室",
+                  "hyperlink": "https://www.plazapremiumlounge.com/zh-cn#",
+                  "hyperlinkTitle": ""
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "dc57895191",
+                      "html": "<p>Chen Hao</p><p>郭小蜜 可以刷兩次的，環亞認次數算人頭不看名字是否是本人</p>",
+                      "text": "Chen Hao\n郭小蜜 可以刷兩次的，環亞認次數算人頭不看名字是否是本人"
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "2f6c7df521",
+                      "html": "<p>郭小蜜 如果都寫你的名字 你只要一起過去 貴賓室還是會放行 他只會核對點數名字跟機票</p>",
+                      "hyperlink": "https://www.facebook.com/groups/agamilestravel/permalink/1508236926569036/?rdid=yQUfHg1UHiLSi227&share_url=https://www.facebook.com/share/p/UMchUSZszZnQ6dBj/",
+                      "hyperlinkTitle": "",
+                      "text": "郭小蜜 如果都寫你的名字 你只要一起過去 貴賓室還是會放行 他只會核對點數名字跟機票"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "91d28e7596",
+          "html": "<p>交通</p>",
+          "expanded": true,
+          "text": "交通"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "19706152cd",
+              "html": "<p>英國</p>",
+              "expanded": true,
+              "text": "英國"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "a3151cd9bb",
+                  "html": "<p>EuroStar</p>",
+                  "expanded": true,
+                  "text": "EuroStar"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "147194c6ad",
+                      "html": "<p>一條連接英國倫敦聖潘克拉斯車站與法國巴黎(北站)、里爾與比利時布魯塞爾(南站)及荷蘭阿姆斯特丹(中央車站)等地的高速鐵路</p>",
+                      "text": "一條連接英國倫敦聖潘克拉斯車站與法國巴黎(北站)、里爾與比利時布魯塞爾(南站)及荷蘭阿姆斯特丹(中央車站)等地的高速鐵路"
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "d6170ab924",
+                      "html": "浮動票價",
+                      "text": "浮動票價"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "2a909b4cdb",
+              "html": "<p>奧地利</p>",
+              "expanded": true,
+              "text": "奧地利"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "9dc4bbd423",
+                  "html": "<p>FlixBus跨國巴士</p>",
+                  "text": "FlixBus跨國巴士"
+                }
+              },
+              {
+                "data": {
+                  "id": "41b4c34bb0",
+                  "html": "CAT City Airport Train",
+                  "expanded": true,
+                  "text": "CAT City Airport Train"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "1489e2f173",
+                      "html": "<p>機場快線</p>",
+                      "text": "機場快線"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "c66cfa56d2",
+          "html": "租車",
+          "expanded": true,
+          "text": "租車"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "33e7e09789",
+              "html": "<p>保險</p>",
+              "expanded": true,
+              "text": "保險"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "214952d344",
+                  "html": "CDW",
+                  "expanded": true,
+                  "text": "CDW"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "b63af39f3b",
+                      "html": "<p>Collision Damage Waiver</p>",
+                      "expanded": true,
+                      "text": "Collision Damage Waiver"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "b77b20e9d2",
+                          "html": "<p>保障你的車子</p>",
+                          "text": "保障你的車子"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summaries": []
+              },
+              {
+                "data": {
+                  "id": "16a15c741c",
+                  "html": "<p>LDW</p>",
+                  "expanded": true,
+                  "text": "LDW"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "ba43fa5708",
+                      "html": "<p>Loss Damage Waiver</p>",
+                      "expanded": true,
+                      "text": "Loss Damage Waiver"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "15456eec48",
+                          "html": "<p>保障你的車子</p>",
+                          "text": "保障你的車子"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summaries": []
+              },
+              {
+                "data": {
+                  "id": "b6f946ae0e",
+                  "html": "<p>NOC</p>",
+                  "expanded": true,
+                  "text": "NOC"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "69d741b32b",
+                      "html": "<p>Non Operation Charge</p>",
+                      "expanded": true,
+                      "text": "Non Operation Charge"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "049981efc2",
+                          "html": "<p>營業損失賠償</p>",
+                          "text": "營業損失賠償"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "data": {
+          "id": "44cf74623c",
+          "html": "<p>入境</p>",
+          "expanded": true,
+          "text": "入境"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "bbac5714bc",
+              "html": "<p>印度</p>",
+              "expanded": true,
+              "text": "印度"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "7965a50138",
+                  "html": "<p>新德里</p>",
+                  "expanded": true,
+                  "text": "新德里"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "05c23411ac",
+                      "html": "<p>法國</p>",
+                      "expanded": true,
+                      "text": "法國"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "c24ee252c4",
+                          "html": "<p>認為是中國，需要簽證</p>",
+                          "expanded": true,
+                          "text": "認為是中國，需要簽證"
+                        },
+                        "children": [
+                          {
+                            "data": {
+                              "id": "aff0ce7de1",
+                              "html": "",
+                              "text": "",
+                              "image": "https://gitmindhk.aoscdn.com/app%2Fgitmind-com%2Fresources%2Fdocs%2F4oqmb0e1h04f%2F1718507830806_CKUSERdk5F4WwL8rmsaKU5a4Y8KlUW.png?auth_key=1729050229-119903-936178-02b7038d83d26a9e9bce1881603f1075&Expires=1729050229&x-oss-process=image%2Fresize%2Cw_640",
+                              "imageNaturalSize": {
+                                "width": 720,
+                                "height": 1280
+                              },
+                              "imageTitle": "image.png",
+                              "imageOthers": {
+                                "resource_id": "4f5ba523-2738-4704-b3e1-e33a0e6cb7ad",
+                                "image_original_url": "https://gitmindhk.aoscdn.com/app/gitmind-com/resources/docs/4oqmb0e1h04f/1718507830806_CKUSERdk5F4WwL8rmsaKU5a4Y8KlUW.png?auth_key=1718594231-414704-477069-457c575376077d76b45e6ab7f7599818"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "7195eec3f4",
+          "html": "<p>旅行</p>",
+          "expanded": true,
+          "text": "旅行"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "ef037a85a2",
+              "html": "<p>義大利</p>",
+              "expanded": true,
+              "text": "義大利"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "44ee8d8f35",
+                  "html": "景點",
+                  "expanded": true,
+                  "text": "景點"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "d84e1d8a0c",
+                      "html": "<p>多洛米蒂</p>",
+                      "text": "多洛米蒂"
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "dcf72092fc",
+                      "html": "<p>科莫湖</p>",
+                      "text": "科莫湖"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "66783e2b05",
+              "html": "<p>墨西哥</p>",
+              "expanded": true,
+              "text": "墨西哥"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "e0529374bc",
+                  "html": "節慶",
+                  "expanded": true,
+                  "text": "節慶"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "d9ca95e80f",
+                      "html": "<p>亡靈節</p>",
+                      "expanded": true,
+                      "text": "亡靈節"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "0d1199a1d6",
+                          "html": "<p>11-01至11-02</p>",
+                          "text": "11-01至11-02"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "64cd60a211",
+              "html": "<p>加拿大</p>",
+              "expanded": true,
+              "text": "加拿大"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "31b41667b7",
+                  "html": "<p>景點</p>",
+                  "expanded": true,
+                  "text": "景點"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "f9e9fff964",
+                      "html": "<p>Moraine Lake</p>",
+                      "expanded": true,
+                      "text": "Moraine Lake",
+                      "image": "https://gitmindhk.aoscdn.com/1ba%2F1baddfcd-5303-4934-bd9c-a91078742b5c.jpeg?auth_key=1729050229-664219-180398-66ed9b139555b6d8a37d1eb026aad8e4&Expires=1729050229&x-oss-process=image%2Fresize%2Cw_640",
+                      "imageTitle": "",
+                      "imageNaturalSize": {
+                        "width": 1499,
+                        "height": 2048
+                      },
+                      "imageSize": {
+                        "width": 220,
+                        "height": 300
+                      },
+                      "imageOthers": {
+                        "resource_id": "3bd9efb3-77d2-48e4-86f7-2f9dbfcab45e",
+                        "image_original_url": "/var/mobile/Containers/Data/Application/D51A8312-8EB8-49FC-B4DC-F64B227B65E9/Documents/202406242259113917580152.jpeg"
+                      }
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "65cd44e7ed",
+                          "html": "<p>Canoe Rental</p>",
+                          "text": "Canoe Rental"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "c2efe9fe77",
+                  "html": "<p>通行證</p>",
+                  "expanded": true,
+                  "text": "通行證"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "dec247a952",
+                      "hyperlink": "https://www.facebook.com/share/Q8MJ2ogH3jNhQFML/?",
+                      "hyperlinkTitle": "",
+                      "html": "<p>Library Parks Pass Program</p>",
+                      "expanded": true,
+                      "text": "Library Parks Pass Program"
+                    },
+                    "children": [
+                      {
+                        "data": {
+                          "id": "6d6c44ed14",
+                          "html": "<p>居民才可使用</p>",
+                          "text": "居民才可使用"
+                        }
+                      },
+                      {
+                        "data": {
+                          "id": "11b93f977a",
+                          "html": "<p>州立公園280座免費停車</p>",
+                          "text": "州立公園280座免費停車"
+                        }
+                      },
+                      {
+                        "data": {
+                          "id": "e836737875",
+                          "html": "<p>至2025年</p>",
+                          "text": "至2025年"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "6efb1b8262",
+              "html": "日本",
+              "expanded": true,
+              "text": "日本"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "379e922707",
+          "html": "<p>信用卡</p>",
+          "expanded": true,
+          "text": "信用卡"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "10ddf2f99b",
+              "html": "<p>美卡 美國運通</p>",
+              "expanded": true,
+              "text": "美卡 美國運通"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "26573c89b5",
+                  "html": "<p>教學</p>",
+                  "expanded": true,
+                  "text": "教學"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "02ec5feb79",
+                      "html": "<p>A+哩程</p>",
+                      "hyperlink": "https://www.facebook.com/share/p/PBkzEvFguAhU7R11/?",
+                      "hyperlinkTitle": "",
+                      "text": "A+哩程"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "floatRoots": [],
+  "relLines": [],
+  "watermark": {
+    "id": "zz3tje0eqh0d4w2gxe38z7d2w12hyfy3",
+    "show": false
+  },
+  "outlineThemeNo": 1
+}
