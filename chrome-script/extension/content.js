@@ -9,29 +9,32 @@ function runSniper(keywords, ticketCount, autoSubmit = true) {
         ticketsSelected += parseInt(input.value, 10);
       }
     });
-    // 遍歷所有票種區塊
-    document.querySelectorAll('.ticket-unit').forEach(unit => {
-      if (ticketsSelected >= ticketCount) return;
-      const name = unit.querySelector('.ticket-name')?.innerText.trim() || '';
-      const plusBtn = unit.querySelector('button.plus');
-      const input = unit.querySelector('.ticket-quantity input[type="text"][ng-model="ticketModel.quantity"]');
-      const statusText = unit.innerText;
-      if (
-        keywords.some(keyword => name.includes(keyword)) &&
-        plusBtn && !plusBtn.disabled &&
-        input && !input.disabled &&
-        !statusText.includes('尚未開賣') &&
-        !statusText.includes('已售完')
-      ) {
-        const canSelect = ticketCount - ticketsSelected;
-        for (let i = 0; i < canSelect; i++) {
-          plusBtn.click();
-          ticketsSelected++;
-          if (ticketsSelected >= ticketCount) break;
+    // 按照 keywords 順序搶票
+    for (const keyword of keywords) {
+      if (ticketsSelected >= ticketCount) break;
+      document.querySelectorAll('.ticket-unit').forEach(unit => {
+        if (ticketsSelected >= ticketCount) return;
+        const name = unit.querySelector('.ticket-name')?.innerText.trim() || '';
+        const plusBtn = unit.querySelector('button.plus');
+        const input = unit.querySelector('.ticket-quantity input[type="text"][ng-model="ticketModel.quantity"]');
+        const statusText = unit.innerText;
+        if (
+          name.includes(keyword) &&
+          plusBtn && !plusBtn.disabled &&
+          input && !input.disabled &&
+          !statusText.includes('尚未開賣') &&
+          !statusText.includes('已售完')
+        ) {
+          const canSelect = ticketCount - ticketsSelected;
+          for (let i = 0; i < canSelect; i++) {
+            plusBtn.click();
+            ticketsSelected++;
+            if (ticketsSelected >= ticketCount) break;
+          }
+          if (canSelect > 0) selected = true;
         }
-        if (canSelect > 0) selected = true;
-      }
-    });
+      });
+    }
   
     // 勾選同意條款
     const agreeCheckbox = document.querySelector('#person_agree_terms');
