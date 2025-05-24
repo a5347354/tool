@@ -1,5 +1,5 @@
 // 在註冊頁面自動搶票的主函數
-function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false) {
+function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false, memberSerial = '') {
     let selected = false;
     // 先加總所有已選票數
     let ticketsSelected = 0;
@@ -43,6 +43,23 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
       });
     }
   
+    // 新增：填入會員序號
+    if (memberSerial) {
+      document.querySelectorAll('.ticket-unit').forEach(unit => {
+        // 只針對已選張數的票種
+        const qtyInput = unit.querySelector('.ticket-quantity input[type="text"][ng-model="ticketModel.quantity"]');
+        if (qtyInput && parseInt(qtyInput.value, 10) > 0) {
+          // 找到 .ticket-unit 內第一個 input[type=text]，且不是張數的 input
+          const textInputs = Array.from(unit.querySelectorAll('input[type="text"]'));
+          const serialInput = textInputs.find(inp => inp !== qtyInput && inp.value === '');
+          if (serialInput) {
+            serialInput.value = memberSerial;
+            serialInput.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        }
+      });
+    }
+  
     // 勾選同意條款
     const agreeCheckbox = document.querySelector('#person_agree_terms');
     if (agreeCheckbox && !agreeCheckbox.checked) agreeCheckbox.click();
@@ -71,10 +88,10 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   let intervalId = null;
   
   // 啟動搶票輪詢，每秒執行一次
-  function startSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false) {
+  function startSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false, memberSerial = '') {
     if (intervalId) clearInterval(intervalId);
     intervalId = setInterval(() => {
-      if (shouldRun()) runSniper(keywords, ticketCount, autoSubmit, reverseOrder);
+      if (shouldRun()) runSniper(keywords, ticketCount, autoSubmit, reverseOrder, memberSerial);
     }, 1000); // 每秒執行一次
   }
   
@@ -103,12 +120,12 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   }
   
   // 讀取 chrome 儲存的狀態，決定是否啟動搶票
-  chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder'], (data) => {
+  chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial'], (data) => {
     if (data.sniperActive) {
       // 若在活動頁則自動導向註冊頁
       if (goToRegistrationIfOnEventPage()) return;
       if (shouldRun()) {
-        startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder);
+        startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '');
       } else {
         stopSniper();
       }
@@ -120,9 +137,9 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   // 監聽 popup 狀態變化（啟動/停止）
   chrome.storage.onChanged.addListener((changes, area) => {
     if (area === 'local') {
-      chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder'], (data) => {
+      chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial'], (data) => {
         if (data.sniperActive && shouldRun()) {
-          startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder);
+          startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '');
         } else {
           stopSniper();
         }
