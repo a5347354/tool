@@ -1,16 +1,21 @@
 // 在註冊頁面自動搶票的主函數
 function runSniper(keywords, ticketCount, autoSubmit = true) {
-    // === 你的原始邏輯，已改為使用關鍵字和票數 ===
     let selected = false;
+    // 先加總所有已選票數
     let ticketsSelected = 0;
+    document.querySelectorAll('.ticket-unit').forEach(unit => {
+      const input = unit.querySelector('.ticket-quantity input[type="text"][ng-model="ticketModel.quantity"]');
+      if (input && !isNaN(parseInt(input.value, 10))) {
+        ticketsSelected += parseInt(input.value, 10);
+      }
+    });
     // 遍歷所有票種區塊
     document.querySelectorAll('.ticket-unit').forEach(unit => {
-      if (ticketsSelected >= ticketCount) return; // 已選夠票就跳出
+      if (ticketsSelected >= ticketCount) return;
       const name = unit.querySelector('.ticket-name')?.innerText.trim() || '';
-      const plusBtn = unit.querySelector('button.plus'); // 加號按鈕
+      const plusBtn = unit.querySelector('button.plus');
       const input = unit.querySelector('.ticket-quantity input[type="text"][ng-model="ticketModel.quantity"]');
-      const statusText = unit.innerText; // 票種區塊所有文字
-      // 判斷票種名稱是否包含關鍵字、按鈕可點、輸入框可用、且不是未開賣或已售完
+      const statusText = unit.innerText;
       if (
         keywords.some(keyword => name.includes(keyword)) &&
         plusBtn && !plusBtn.disabled &&
@@ -18,9 +23,12 @@ function runSniper(keywords, ticketCount, autoSubmit = true) {
         !statusText.includes('尚未開賣') &&
         !statusText.includes('已售完')
       ) {
-        const canSelect = ticketCount - ticketsSelected; // 還能選幾張
-        for (let i = 0; i < canSelect; i++) plusBtn.click(); // 點擊加號選票
-        ticketsSelected += canSelect;
+        const canSelect = ticketCount - ticketsSelected;
+        for (let i = 0; i < canSelect; i++) {
+          plusBtn.click();
+          ticketsSelected++;
+          if (ticketsSelected >= ticketCount) break;
+        }
         if (canSelect > 0) selected = true;
       }
     });
