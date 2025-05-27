@@ -164,9 +164,11 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
         '目前沒有票',
       ];
       const bodyText = document.body.innerText;
-      const allSoldOut = Array.from(document.querySelectorAll('.ticket-unit')).length > 0 &&
-        Array.from(document.querySelectorAll('.ticket-unit')).every(unit => unit.innerText.includes('已售完'));
-      if (noTicketsTexts.some(txt => bodyText.includes(txt)) || allSoldOut) {
+      const allSoldOutOrUnavailable = Array.from(document.querySelectorAll('.ticket-unit')).length > 0 &&
+        Array.from(document.querySelectorAll('.ticket-unit')).every(unit =>
+          unit.innerText.includes('已售完') || unit.innerText.includes('暫無票券')
+        );
+      if (noTicketsTexts.some(txt => bodyText.includes(txt)) || allSoldOutOrUnavailable) {
         const interval = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
         console.log('[AutoRefreshNoTickets] No tickets or all tickets unavailable, will reload in', interval, 'ms');
         setTimeout(() => window.location.reload(), interval);
