@@ -1,5 +1,5 @@
 // 在註冊頁面自動搶票的主函數
-function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false, memberSerial = '') {
+function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false, memberSerial = '', snipeLeftOne = false) {
     let selected = false;
     // 先加總所有已選票數
     let ticketsSelected = 0;
@@ -15,6 +15,13 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
       const ticketUnits = reverseOrder ? Array.from(document.querySelectorAll('.ticket-unit')).reverse() : document.querySelectorAll('.ticket-unit');
       ticketUnits.forEach(unit => {
         if (ticketsSelected >= ticketCount) return;
+        // 只有當 snipeLeftOne 為 false 時，才跳過剩 1 張票
+        if (!snipeLeftOne && ticketCount > 1) {
+          const leftOne = unit.querySelector('.help-inline.danger, .mobile-capacity-notice.help-inline.danger');
+          if (leftOne && /剩\s*1\s*張票/.test(leftOne.innerText)) {
+            return; // 跳過這個票種
+          }
+        }
         const name = unit.querySelector('.ticket-name')?.innerText.trim() || '';
         const plusBtn = unit.querySelector('button.plus');
         const input = unit.querySelector('.ticket-quantity input[type="text"][ng-model="ticketModel.quantity"]');
@@ -74,7 +81,7 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
         } else {
           console.log('找不到可用的送出按鈕或按鈕被禁用');
         }
-      }, 500); // 延遲 0.5 秒送出
+      }, 50); // 延遲 0.5 秒送出
     } else if (!selected) {
       console.log('沒有符合條件的票種可搶');
     }
@@ -88,11 +95,11 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   let intervalId = null;
   
   // 啟動搶票輪詢，每秒執行一次
-  function startSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false, memberSerial = '') {
+  function startSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = false, memberSerial = '', snipeLeftOne = false) {
     if (intervalId) clearInterval(intervalId);
     intervalId = setInterval(() => {
-      if (shouldRun()) runSniper(keywords, ticketCount, autoSubmit, reverseOrder, memberSerial);
-    }, 1000); // 每秒執行一次
+      if (shouldRun()) runSniper(keywords, ticketCount, autoSubmit, reverseOrder, memberSerial, snipeLeftOne);
+    }, 50); // 每 0.1 秒執行一次
   }
   
   // 停止搶票輪詢
@@ -120,28 +127,81 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   }
   
   // 讀取 chrome 儲存的狀態，決定是否啟動搶票
-  chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial'], (data) => {
+  chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets'], (data) => {
     if (data.sniperActive) {
       // 若在活動頁則自動導向註冊頁
       if (goToRegistrationIfOnEventPage()) return;
       if (shouldRun()) {
-        startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '');
+        startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '', !!data.snipeLeftOne);
       } else {
         stopSniper();
       }
     } else {
       stopSniper();
     }
+    // 新增：自動刷新無票頁面
+    if (data.autoRefreshNoTickets) {
+      startAutoRefreshNoTickets();
+    } else {
+      stopAutoRefreshNoTickets();
+    }
   });
+  
+  let autoRefreshNoTicketsTimeoutId = null;
+  function startAutoRefreshNoTickets() {
+    stopAutoRefreshNoTickets();
+    function tryRefresh() {
+      if (!shouldRun()) {
+        autoRefreshNoTicketsTimeoutId = setTimeout(tryRefresh, 200);
+        return;
+      }
+      const noTicketsTexts = [
+        '目前沒有任何可以購買的票券',
+        '目前沒有任何票券',
+        '目前沒有任何可以購買的票',
+        '目前沒有任何票',
+        '目前沒有票券',
+        '目前沒有票',
+      ];
+      const bodyText = document.body.innerText;
+      const ticketUnits = document.querySelectorAll('.ticket-unit');
+      let anyPlusEnabled = false;
+      ticketUnits.forEach(unit => {
+        const plusBtn = unit.querySelector('button.plus');
+        if (plusBtn && !plusBtn.disabled) {
+          anyPlusEnabled = true;
+        }
+      });
+      if (noTicketsTexts.some(txt => bodyText.includes(txt)) || !anyPlusEnabled) {
+        const interval = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
+        console.log('[AutoRefreshNoTickets] No tickets or all tickets unavailable, will reload in', interval, 'ms');
+        setTimeout(() => window.location.reload(), interval);
+      } else {
+        // 若沒觸發 reload，立刻下一輪
+        autoRefreshNoTicketsTimeoutId = setTimeout(tryRefresh, 0);
+      }
+    }
+    tryRefresh();
+  }
+  function stopAutoRefreshNoTickets() {
+    if (autoRefreshNoTicketsTimeoutId) clearTimeout(autoRefreshNoTicketsTimeoutId);
+    autoRefreshNoTicketsTimeoutId = null;
+  }
   
   // 監聽 popup 狀態變化（啟動/停止）
   chrome.storage.onChanged.addListener((changes, area) => {
     if (area === 'local') {
-      chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial'], (data) => {
+      chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets'], (data) => {
         if (data.sniperActive && shouldRun()) {
-          startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '');
+          startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '', !!data.snipeLeftOne);
         } else {
           stopSniper();
+        }
+        // 新增：自動刷新無票頁面
+        if (data.autoRefreshNoTickets) {
+          startAutoRefreshNoTickets();
+        } else {
+          stopAutoRefreshNoTickets();
         }
       });
     }

@@ -5,7 +5,9 @@ document.getElementById('startBtn').onclick = async () => {
     const autoSubmit = document.getElementById('autoSubmit').checked;
     const reverseOrder = document.getElementById('reverseOrder').checked;
     const memberSerial = document.getElementById('memberSerial').value.trim();
-    chrome.storage.local.set({sniperActive: true, keywords, ticketCount, autoSubmit, reverseOrder, memberSerial});
+    const snipeLeftOne = document.getElementById('snipeLeftOne').checked;
+    const autoRefreshNoTickets = document.getElementById('autoRefreshNoTickets').checked;
+    chrome.storage.local.set({sniperActive: true, keywords, ticketCount, autoSubmit, reverseOrder, memberSerial, snipeLeftOne, autoRefreshNoTickets});
     chrome.scripting.executeScript({
       target: {tabId: tab.id},
       func: () => window.location.reload()
@@ -19,11 +21,13 @@ document.getElementById('startBtn').onclick = async () => {
   };
   
   // Load current settings
-  chrome.storage.local.get(['keywords', 'ticketCount', 'sniperActive', 'autoSubmit', 'reverseOrder', 'memberSerial'], (data) => {
+  chrome.storage.local.get(['keywords', 'ticketCount', 'sniperActive', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets'], (data) => {
     if (data.keywords) document.getElementById('keywords').value = data.keywords.join(', ');
     if (data.ticketCount) document.getElementById('ticketCount').value = data.ticketCount;
     document.getElementById('status').innerText = data.sniperActive ? 'Sniper started!' : 'Sniper stopped!';
     document.getElementById('autoSubmit').checked = data.autoSubmit !== false;
     document.getElementById('reverseOrder').checked = !!data.reverseOrder;
     if (data.memberSerial) document.getElementById('memberSerial').value = data.memberSerial;
+    document.getElementById('snipeLeftOne').checked = !!data.snipeLeftOne;
+    document.getElementById('autoRefreshNoTickets').checked = !!data.autoRefreshNoTickets;
   });
