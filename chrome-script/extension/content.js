@@ -164,15 +164,7 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
         '目前沒有票',
       ];
       const bodyText = document.body.innerText;
-      const ticketUnits = document.querySelectorAll('.ticket-unit');
-      let anyPlusEnabled = false;
-      ticketUnits.forEach(unit => {
-        const plusBtn = unit.querySelector('button.plus');
-        if (plusBtn && !plusBtn.disabled) {
-          anyPlusEnabled = true;
-        }
-      });
-      if (noTicketsTexts.some(txt => bodyText.includes(txt)) || !anyPlusEnabled) {
+      if (noTicketsTexts.some(txt => bodyText.includes(txt))) {
         const interval = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
         console.log('[AutoRefreshNoTickets] No tickets or all tickets unavailable, will reload in', interval, 'ms');
         setTimeout(() => window.location.reload(), interval);
