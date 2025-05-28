@@ -1,0 +1,14 @@
+1_events.html(點選Buy Now) PS. JAMH25KL為ID, 為一個變數 
+https://starplanet.bigtix.io/zh-cn/events/Jam-Hsiao-2025/JAMH25KL
+2_booking.html(點選同意) PS. JAMH25KL為ID, 為一個變數 
+https://starplanet.bigtix.io/booking/JAMH25KL
+3_quantity.html(選取票數) PS. JAMH25KL為ID, 為一個變數 
+https://starplanet.bigtix.io/booking/JAMH25KL/quantity
+4_seats.html(選取座位) PS. JAMH25KL為ID, 為一個變數 
+https://starplanet.bigtix.io/booking/JAMH25KL/seats
+5_checkout.html
+https://starplanet.bigtix.io/checkout
+6_patron.html
+https://starplanet.bigtix.io/checkout/patron
+7_payment.html
+https://starplanet.bigtix.io/checkout/payment
