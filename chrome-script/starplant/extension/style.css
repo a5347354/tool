@@ -1,0 +1,15 @@
+.popup-container, .options-container {
+  font-family: Arial, sans-serif;
+  padding: 16px;
+  width: 250px;
+}
+.button-group {
+  margin: 10px 0;
+}
+.button-group button {
+  margin-right: 8px;
+}
+#status {
+  color: green;
+  margin-left: 10px;
+} 
