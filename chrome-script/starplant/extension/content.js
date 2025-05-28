@@ -125,8 +125,14 @@
                 if (current === desired) {
                   clearInterval(interval);
                   setTimeout(() => {
-                    confirmBtn.click();
-                    console.log('Set quantity and confirmed');
+                    // Double-check before confirming
+                    const finalValue = parseInt(input.value, 10);
+                    if (finalValue === desired) {
+                      confirmBtn.click();
+                      console.log('Set quantity and confirmed');
+                    } else {
+                      console.error('Quantity mismatch before confirming:', finalValue, 'expected:', desired);
+                    }
                   }, 100); // 稍微等一下再點確認
                 }
               }, 50);
