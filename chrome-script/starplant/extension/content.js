@@ -229,7 +229,38 @@
           case /\/checkout$/.test(pathname): {
             matchedRoute = 'checkout';
             console.log('Matched route: checkout.html');
-            // TODO: Implement logic to proceed to patron info
+            // Auto-click the main checkout button (sticky or bottom nav)
+            // 1. Try sticky checkout card button
+            const stickyBtn = document.querySelector('.bigtix-checkout_shopping_cart_sticky_checkout_card_next_button');
+            if (stickyBtn && !stickyBtn.disabled && stickyBtn.offsetParent !== null) {
+              stickyBtn.click();
+              console.log('Auto-clicked sticky checkout button');
+              break;
+            }
+            // 2. Try bottom navigation checkout button
+            const navBtn = document.querySelector('.bigtix-booking-pagenav-next');
+            if (navBtn && !navBtn.disabled && navBtn.offsetParent !== null) {
+              navBtn.click();
+              console.log('Auto-clicked bottom nav checkout button');
+              break;
+            }
+            // 3. Fallback: try any visible button with text '结帐'
+            const btns = Array.from(document.querySelectorAll('button')).filter(btn => {
+              const style = window.getComputedStyle(btn);
+              return (
+                style.display !== 'none' &&
+                style.visibility !== 'hidden' &&
+                !btn.disabled &&
+                btn.offsetParent !== null &&
+                btn.textContent.trim() === '结帐'
+              );
+            });
+            if (btns.length > 0) {
+              btns[0].click();
+              console.log('Auto-clicked fallback checkout button');
+            } else {
+              console.log('No checkout button found to click');
+            }
             break;
           }
           case /\/checkout\/patron$/.test(pathname): {
