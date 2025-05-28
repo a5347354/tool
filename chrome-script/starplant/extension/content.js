@@ -137,7 +137,57 @@
             matchedRoute = 'seats';
             eventId = pathname.match(/\/booking\/([\w-]+)/)[1];
             console.log('Matched route: seats.html, eventId:', eventId);
-            // TODO: Implement logic to select seat based on keywords
+            // Seat selection logic (keyword priority, real user click)
+            const seatAreas = Array.from(document.querySelectorAll('.bigtix-overview-map__area'));
+            const visibleAreas = seatAreas.filter(area => !area.classList.contains('bigtix-overview-map__area-hidden'));
+            const lowerKeywords = keywords.map(k => k.toLowerCase());
+            let matchArea = null;
+            let matchedKeyword = null;
+            for (const kw of lowerKeywords) {
+              matchArea = visibleAreas.find(area => {
+                const sectionName = (area.getAttribute('data-section-name') || '').toLowerCase();
+                return sectionName.includes(kw);
+              });
+              if (matchArea) {
+                matchedKeyword = kw;
+                break;
+              }
+            }
+            function simulateUserClick(el) {
+              const event = new MouseEvent('click', {
+                bubbles: true,
+                cancelable: true,
+                view: window
+              });
+              el.dispatchEvent(event);
+            }
+            if (matchArea) {
+              simulateUserClick(matchArea);
+              console.log('Auto-selected seat area:', matchArea.id, matchArea.getAttribute('data-section-name'), matchArea.getAttribute('data-area-code'), 'matched keyword:', matchedKeyword);
+              // 點擊確認按鈕
+              setTimeout(() => {
+                // 嘗試找到常見的確認按鈕
+                const confirmBtn = document.querySelector('#bigtix-booking-next-page') ||
+                  Array.from(document.querySelectorAll('button')).find(btn => {
+                    const style = window.getComputedStyle(btn);
+                    return (
+                      style.display !== 'none' &&
+                      style.visibility !== 'hidden' &&
+                      !btn.disabled &&
+                      btn.offsetParent !== null &&
+                      (btn.className.includes('primary') || btn.className.includes('bigtix-button--primary'))
+                    );
+                  });
+                if (confirmBtn) {
+                  simulateUserClick(confirmBtn);
+                  console.log('Auto-clicked seat confirm button');
+                } else {
+                  console.log('Confirm button not found after seat selection');
+                }
+              }, 300); // 稍微等一下讓動畫完成
+            } else {
+              console.log('No matching seat area found for keywords:', keywords);
+            }
             break;
           }
           case /\/booking\/([\w-]+)/.test(pathname): {
