@@ -89,7 +89,48 @@
             matchedRoute = 'quantity';
             eventId = pathname.match(/\/booking\/([\w-]+)/)[1];
             console.log('Matched route: quantity.html, eventId:', eventId);
-            // TODO: Implement logic to select ticket quantity based on keywords
+
+            chrome.storage.sync.get(['quantity'], (data) => {
+              const desired = parseInt(data.quantity, 10);
+              if (!desired || isNaN(desired)) {
+                console.log('No valid quantity set in extension UI');
+                return;
+              }
+              // 找到 input, +, - 按鈕
+              const input = document.querySelector('input[type="text"].bigtix-input-number');
+              const plusBtn = document.querySelector('.bigtix-quantity-stepper__plus');
+              const minusBtn = document.querySelector('.bigtix-quantity-stepper__minus');
+              const confirmBtn = document.querySelector('#bigtix-booking-next-page');
+
+              if (!input || !plusBtn || !minusBtn || !confirmBtn) {
+                console.log('Some elements not found for quantity step');
+                return;
+              }
+
+              let current = parseInt(input.value, 10);
+              if (current === desired) {
+                confirmBtn.click();
+                console.log('Quantity already correct, confirmed');
+                return;
+              }
+
+              // 點擊 + 或 - 直到正確
+              let interval = setInterval(() => {
+                current = parseInt(input.value, 10);
+                if (current < desired) {
+                  plusBtn.click();
+                } else if (current > desired) {
+                  minusBtn.click();
+                }
+                if (current === desired) {
+                  clearInterval(interval);
+                  setTimeout(() => {
+                    confirmBtn.click();
+                    console.log('Set quantity and confirmed');
+                  }, 100); // 稍微等一下再點確認
+                }
+              }, 50);
+            });
             break;
           }
           case /\/booking\/([\w-]+)\/seats/.test(pathname): {

@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const keywordsInput = document.getElementById('keywords');
+  const quantityInput = document.getElementById('quantity');
   const startBtn = document.getElementById('start');
   const stopBtn = document.getElementById('stop');
 
-  // Load saved keywords and state
-  chrome.storage.sync.get(['keywords', 'isActive'], (data) => {
+  // Load saved keywords, quantity and state
+  chrome.storage.sync.get(['keywords', 'quantity', 'isActive'], (data) => {
     if (data.keywords) keywordsInput.value = data.keywords;
+    if (data.quantity) quantityInput.value = data.quantity;
     updateButtons(data.isActive);
   });
 
@@ -21,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   keywordsInput.addEventListener('change', () => {
     chrome.storage.sync.set({ keywords: keywordsInput.value });
+  });
+  quantityInput.addEventListener('change', () => {
+    chrome.storage.sync.set({ quantity: quantityInput.value });
   });
 
   startBtn.addEventListener('click', () => {
