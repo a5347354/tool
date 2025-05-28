@@ -127,7 +127,7 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   }
   
   // 讀取 chrome 儲存的狀態，決定是否啟動搶票
-  chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets'], (data) => {
+  chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets', 'reloadIntervalMin', 'reloadIntervalMax'], (data) => {
     if (data.sniperActive) {
       // 若在活動頁則自動導向註冊頁
       if (goToRegistrationIfOnEventPage()) return;
@@ -141,14 +141,14 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
     }
     // 新增：自動刷新無票頁面
     if (data.autoRefreshNoTickets) {
-      startAutoRefreshNoTickets();
+      startAutoRefreshNoTickets(data.reloadIntervalMin, data.reloadIntervalMax);
     } else {
       stopAutoRefreshNoTickets();
     }
   });
   
   let autoRefreshNoTicketsTimeoutId = null;
-  function startAutoRefreshNoTickets() {
+  function startAutoRefreshNoTickets(reloadIntervalMin = 500, reloadIntervalMax = 1000) {
     stopAutoRefreshNoTickets();
     function tryRefresh() {
       if (!shouldRun()) {
@@ -169,7 +169,9 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
           unit.innerText.includes('已售完') || unit.innerText.includes('暫無票券')
         );
       if (noTicketsTexts.some(txt => bodyText.includes(txt)) || allSoldOutOrUnavailable) {
-        const interval = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
+        const min = typeof reloadIntervalMin === 'number' ? reloadIntervalMin : 500;
+        const max = typeof reloadIntervalMax === 'number' ? reloadIntervalMax : 1000;
+        const interval = Math.floor(Math.random() * (max - min + 1)) + min;
         console.log('[AutoRefreshNoTickets] No tickets or all tickets unavailable, will reload in', interval, 'ms');
         setTimeout(() => window.location.reload(), interval);
       } else {
@@ -187,7 +189,7 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
   // 監聽 popup 狀態變化（啟動/停止）
   chrome.storage.onChanged.addListener((changes, area) => {
     if (area === 'local') {
-      chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets'], (data) => {
+      chrome.storage.local.get(['sniperActive', 'keywords', 'ticketCount', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets', 'reloadIntervalMin', 'reloadIntervalMax'], (data) => {
         if (data.sniperActive && shouldRun()) {
           startSniper(data.keywords || [], data.ticketCount || 1, data.autoSubmit !== false, !!data.reverseOrder, data.memberSerial || '', !!data.snipeLeftOne);
         } else {
@@ -195,7 +197,7 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
         }
         // 新增：自動刷新無票頁面
         if (data.autoRefreshNoTickets) {
-          startAutoRefreshNoTickets();
+          startAutoRefreshNoTickets(data.reloadIntervalMin, data.reloadIntervalMax);
         } else {
           stopAutoRefreshNoTickets();
         }

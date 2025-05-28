@@ -7,7 +7,9 @@ document.getElementById('startBtn').onclick = async () => {
     const memberSerial = document.getElementById('memberSerial').value.trim();
     const snipeLeftOne = document.getElementById('snipeLeftOne').checked;
     const autoRefreshNoTickets = document.getElementById('autoRefreshNoTickets').checked;
-    chrome.storage.local.set({sniperActive: true, keywords, ticketCount, autoSubmit, reverseOrder, memberSerial, snipeLeftOne, autoRefreshNoTickets});
+    const reloadIntervalMin = parseInt(document.getElementById('reloadIntervalMin').value, 10) || 500;
+    const reloadIntervalMax = parseInt(document.getElementById('reloadIntervalMax').value, 10) || 1000;
+    chrome.storage.local.set({sniperActive: true, keywords, ticketCount, autoSubmit, reverseOrder, memberSerial, snipeLeftOne, autoRefreshNoTickets, reloadIntervalMin, reloadIntervalMax});
     chrome.scripting.executeScript({
       target: {tabId: tab.id},
       func: () => window.location.reload()
@@ -21,7 +23,7 @@ document.getElementById('startBtn').onclick = async () => {
   };
   
   // Load current settings
-  chrome.storage.local.get(['keywords', 'ticketCount', 'sniperActive', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets'], (data) => {
+  chrome.storage.local.get(['keywords', 'ticketCount', 'sniperActive', 'autoSubmit', 'reverseOrder', 'memberSerial', 'snipeLeftOne', 'autoRefreshNoTickets', 'reloadIntervalMin', 'reloadIntervalMax'], (data) => {
     if (data.keywords) document.getElementById('keywords').value = data.keywords.join(', ');
     if (data.ticketCount) document.getElementById('ticketCount').value = data.ticketCount;
     document.getElementById('status').innerText = data.sniperActive ? 'Sniper started!' : 'Sniper stopped!';
@@ -30,4 +32,6 @@ document.getElementById('startBtn').onclick = async () => {
     if (data.memberSerial) document.getElementById('memberSerial').value = data.memberSerial;
     document.getElementById('snipeLeftOne').checked = !!data.snipeLeftOne;
     document.getElementById('autoRefreshNoTickets').checked = !!data.autoRefreshNoTickets;
+    if (data.reloadIntervalMin !== undefined) document.getElementById('reloadIntervalMin').value = data.reloadIntervalMin;
+    if (data.reloadIntervalMax !== undefined) document.getElementById('reloadIntervalMax').value = data.reloadIntervalMax;
   });
