@@ -107,13 +107,6 @@
                 return;
               }
 
-              let current = parseInt(input.value, 10);
-              if (current === desired) {
-                confirmBtn.click();
-                console.log('Quantity already correct, confirmed');
-                return;
-              }
-
               // 點擊 + 或 - 直到正確
               let interval = setInterval(() => {
                 current = parseInt(input.value, 10);
@@ -125,13 +118,15 @@
                 if (current === desired) {
                   clearInterval(interval);
                   setTimeout(() => {
-                    // Double-check before confirming
-                    const finalValue = parseInt(input.value, 10);
+                    // 再次用 querySelector 拿 input 並確認數量
+                    const inputCheck = document.querySelector('input[type="text"].bigtix-input-number');
+                    const finalValue = inputCheck ? parseInt(inputCheck.value, 10) : NaN;
+                    console.log('Final value:', finalValue, 'expected:', desired);
                     if (finalValue === desired) {
                       confirmBtn.click();
                       console.log('Set quantity and confirmed');
                     } else {
-                      console.error('Quantity mismatch before confirming:', finalValue, 'expected:', desired);
+                      console.warn('Quantity mismatch before confirming:', finalValue, 'expected:', desired);
                     }
                   }, 100); // 稍微等一下再點確認
                 }
