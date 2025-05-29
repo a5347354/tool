@@ -273,7 +273,60 @@
           case /\/checkout\/patron$/.test(pathname): {
             matchedRoute = 'patron';
             console.log('Matched route: patron.html');
-            // TODO: Autofill personal info
+            // Autofill personal info
+            setTimeout(() => {
+              const info = personalInfo;
+              // 1. Name
+              const nameInput = document.querySelector('input[name="fullName"]');
+              if (nameInput && info.name) nameInput.value = info.name;
+              // 2. Email
+              const emailInput = document.querySelector('input[name="email"]');
+              if (emailInput && info.email) emailInput.value = info.email;
+              // 3. Email confirmation
+              const emailConfInput = document.querySelector('input[name="emailConfirmation"]');
+              if (emailConfInput && info.email) emailConfInput.value = info.email;
+              // 4. Phone
+              const phoneInput = document.querySelector('input[name="phone"]');
+              if (phoneInput && info.phone) phoneInput.value = info.phone;
+
+              // Helper for rc-select dropdowns by index
+              function selectRcDropdownByIndex(idx, visibleText) {
+                const selectors = document.querySelectorAll('.rc-select-selector');
+                if (!selectors[idx]) return;
+                selectors[idx].click();
+                setTimeout(() => {
+                  // Try to input if there is a search box
+                  const searchInput = selectors[idx].parentElement.querySelector('input[type="search"]');
+                  if (searchInput) {
+                    searchInput.value = visibleText;
+                    searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                  }
+                  setTimeout(() => {
+                    // Find dropdown option by visible text
+                    const dropdownItems = Array.from(document.querySelectorAll('.rc-select-dropdown:not([style*="display: none"]) .rc-select-item'));
+                    const match = dropdownItems.find(item => item.textContent.trim().toLowerCase().includes(visibleText.trim().toLowerCase()));
+                    if (match) match.click();
+                  }, 300);
+                }, 100);
+              }
+
+              // 5. Country code (dropdown, first rc-select-selector)
+              if (info.nationality) {
+                selectRcDropdownByIndex(0, info.nationality); // e.g. Taiwan
+              }
+              // 6. NRIC/ID
+              const nricInput = document.querySelector('input[name^="c____"][name$="TEXT1"]');
+              if (nricInput && info.nric) nricInput.value = info.nric;
+              // 7. Nationality (dropdown, second rc-select-selector)
+              if (info.nationality) {
+                selectRcDropdownByIndex(1, info.nationality); // e.g. Chinese, Taiwanese
+              }
+              // 8. Auto-check agreement checkbox if present
+              const agreeBox = document.querySelector('.bigtix-checkbox__icon[role="checkbox"]');
+              if (agreeBox && agreeBox.getAttribute('aria-checked') !== 'true') {
+                agreeBox.click();
+              }
+            }, 500);
             break;
           }
           case /\/checkout\/payment$/.test(pathname): {
