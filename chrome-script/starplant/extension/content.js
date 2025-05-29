@@ -76,13 +76,20 @@
             matchedRoute = 'events';
             eventId = pathname.match(/\/events\/([\w-]+)/)[1];
             console.log('Matched route: events.html, eventId:', eventId);
-            waitAndClick('#bmsportal-book').then(clicked => {
-              if (clicked) {
-                console.log('Auto-clicked Buy Now button');
-              } else {
-                console.log('Buy Now button not found after waiting');
-              }
-            });
+            const buyBtn = document.querySelector('#bmsportal-book');
+            if (buyBtn) {
+              buyBtn.click();
+              console.log('Auto-clicked Buy Now button');
+            } else {
+              console.log('Buy Now button not found, will reload soon');
+              chrome.storage.sync.get(['reloadIntervalMin', 'reloadIntervalMax'], (data) => {
+                const min = typeof data.reloadIntervalMin === 'number' && !isNaN(data.reloadIntervalMin) ? data.reloadIntervalMin : 500;
+                const max = typeof data.reloadIntervalMax === 'number' && !isNaN(data.reloadIntervalMax) ? data.reloadIntervalMax : 1000;
+                const interval = Math.floor(Math.random() * (max - min + 1)) + min;
+                console.log('[AutoReload] Buy Now button not found, will reload in', interval, 'ms');
+                setTimeout(() => window.location.reload(), interval);
+              });
+            }
             break;
           }
           case /\/booking\/([\w-]+)\/quantity/.test(pathname): {
@@ -107,6 +114,13 @@
                 return;
               }
 
+              let current = parseInt(input.value, 10);
+              if (current === desired) {
+                confirmBtn.click();
+                console.log('Quantity already correct, confirmed');
+                return;
+              }
+
               // 點擊 + 或 - 直到正確
               let interval = setInterval(() => {
                 current = parseInt(input.value, 10);
@@ -118,16 +132,8 @@
                 if (current === desired) {
                   clearInterval(interval);
                   setTimeout(() => {
-                    // 再次用 querySelector 拿 input 並確認數量
-                    const inputCheck = document.querySelector('input[type="text"].bigtix-input-number');
-                    const finalValue = inputCheck ? parseInt(inputCheck.value, 10) : NaN;
-                    console.log('Final value:', finalValue, 'expected:', desired);
-                    if (finalValue === desired) {
-                      confirmBtn.click();
-                      console.log('Set quantity and confirmed');
-                    } else {
-                      console.warn('Quantity mismatch before confirming:', finalValue, 'expected:', desired);
-                    }
+                    confirmBtn.click();
+                    console.log('Set quantity and confirmed');
                   }, 100); // 稍微等一下再點確認
                 }
               }, 50);
