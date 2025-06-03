@@ -12,14 +12,14 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
     // 按照 keywords 順序搶票
     for (const keyword of keywords) {
       if (ticketsSelected >= ticketCount) break;
-      const ticketUnits = reverseOrder ? Array.from(document.querySelectorAll('.ticket-unit')).reverse() : document.querySelectorAll('.ticket-unit');
-      ticketUnits.forEach(unit => {
-        if (ticketsSelected >= ticketCount) return;
+      const ticketUnits = reverseOrder ? Array.from(document.querySelectorAll('.ticket-unit')).reverse() : Array.from(document.querySelectorAll('.ticket-unit'));
+      // 先篩選出所有符合條件的票種
+      const eligibleUnits = ticketUnits.filter(unit => {
         // 只有當 snipeLeftOne 為 false 時，才跳過剩 1 張票
         if (!snipeLeftOne && ticketCount > 1) {
           const leftOne = unit.querySelector('.help-inline.danger, .mobile-capacity-notice.help-inline.danger');
           if (leftOne && /剩\s*1\s*張票/.test(leftOne.innerText)) {
-            return; // 跳過這個票種
+            return false; // 跳過這個票種
           }
         }
         const name = unit.querySelector('.ticket-name')?.innerText.trim() || '';
@@ -32,22 +32,28 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
         if (priceSpan) {
           priceText = priceSpan.innerText.replace(/,/g, '');
         }
-        if (
+        return (
           (name.includes(keyword) || (priceText && priceText.includes(keyword))) &&
           plusBtn && !plusBtn.disabled &&
           input && !input.disabled &&
           !statusText.includes('尚未開賣') &&
           !statusText.includes('已售完')
-        ) {
-          const canSelect = ticketCount - ticketsSelected;
-          for (let i = 0; i < canSelect; i++) {
-            plusBtn.click();
-            ticketsSelected++;
-            if (ticketsSelected >= ticketCount) break;
-          }
-          if (canSelect > 0) selected = true;
-        }
+        );
       });
+      if (eligibleUnits.length > 0) {
+        // 隨機選一個 eligible unit
+        const randomIndex = Math.floor(Math.random() * eligibleUnits.length);
+        const unit = eligibleUnits[randomIndex];
+        const plusBtn = unit.querySelector('button.plus');
+        const input = unit.querySelector('input[type="text"][ng-model="ticketModel.quantity"]');
+        const canSelect = ticketCount - ticketsSelected;
+        for (let i = 0; i < canSelect; i++) {
+          plusBtn.click();
+          ticketsSelected++;
+          if (ticketsSelected >= ticketCount) break;
+        }
+        if (canSelect > 0) selected = true;
+      }
     }
   
     // 新增：填入會員序號
