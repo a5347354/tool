@@ -172,7 +172,9 @@ function runSniper(keywords, ticketCount, autoSubmit = true, reverseOrder = fals
       const bodyText = document.body.innerText;
       const allSoldOutOrUnavailable = Array.from(document.querySelectorAll('.ticket-unit')).length > 0 &&
         Array.from(document.querySelectorAll('.ticket-unit')).every(unit =>
-          unit.innerText.includes('已售完') || unit.innerText.includes('暫無票券')
+          unit.innerText.includes('已售完') ||
+          unit.innerText.includes('暫無票券') ||
+          unit.innerText.includes('尚未開賣')
         );
       if (noTicketsTexts.some(txt => bodyText.includes(txt)) || allSoldOutOrUnavailable) {
         const min = typeof reloadIntervalMin === 'number' ? reloadIntervalMin : 500;
